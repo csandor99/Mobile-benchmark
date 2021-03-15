@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/benchmark_background"
+    tools:context=".view.ScoreScreen">
+
+    <TextView
+        android:id="@+id/id_score3"
+        android:layout_width="361dp"
+        android:layout_height="115dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#99D0FB"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalScore" />
+
+    <TextView
+        android:id="@+id/totalScore"
+        android:layout_width="364dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:text="TOTAL SCORE"
+        android:textAlignment="center"
+        android:textColor="#99D0FB"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_score2" />
+
+    <TextView
+        android:id="@+id/id_score2"
+        android:layout_width="360dp"
+        android:layout_height="107dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#99D0FB"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memScore" />
+
+    <TextView
+        android:id="@+id/memScore"
+        android:layout_width="381dp"
+        android:layout_height="36dp"
+        android:gravity="center_horizontal"
+        android:text="Memory test time (ms)"
+        android:textAlignment="center"
+        android:textColor="#99D0FB"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_score" />
+
+    <TextView
+        android:id="@+id/id_score"
+        android:layout_width="351dp"
+        android:layout_height="109dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#99D0FB"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpuScore" />
+
+    <TextView
+        android:id="@+id/cpuScore"
+        android:layout_width="381dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:text="CPU test time (ms)"
+        android:textAlignment="center"
+        android:textColor="#99D0FB"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
